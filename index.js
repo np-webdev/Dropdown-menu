@@ -1,21 +1,12 @@
+const btn = document.querySelector("button");
+const nav = document.querySelector("nav");
+const img = document.querySelector("img");
 
-const btn = document.querySelector("button")
-const nav = document.querySelector("nav")
+btn.addEventListener("click", () => {
+  nav.classList.toggle("active");
 
-btn.addEventListener("click", ()=>{
-    console.log("click")
-}
+  img.src.includes("./menu.png")
+    ? (img.src = "./close.png")
+    : (img.src = "./menu.png");
+});
 
-)
-
-
-
-/* 
-btn {
-if (btn === "./menu.png") {
-    btn = "./close.png"
-} else {
-    btn = "./menu.png"
-}
-}
- */
